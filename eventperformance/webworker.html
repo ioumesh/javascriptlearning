@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- run code in background script -->
+<!-- worker object using constructor worker -->
+<!-- workers runs in diffrent global context -->
+<!-- they can do complex operations without interfering the ui  -->
+<!-- they can send and accept data/ message /from ui  using event -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Web Worker</h1>
+    <h2 id="hi"></h2>
+    <h2 id="output"></h2>
+    <button id="btn1">Load Larg Data </button>
+    <button id="btn2">Print Hi</button>
+    <script src="webworkers.js"></script>
+
+</body>
+
+</html>

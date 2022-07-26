@@ -69,3 +69,31 @@ cart.decrement();
 console.log(cart.value());
 
 // build usesate from javascript
+function useState(intial) {
+  let _state = intial;
+  function setState(value) {
+    _state = value;
+  }
+
+  function getState() {
+    return _state;
+  }
+  return [getState, setState];
+}
+
+function useCounter() {
+  const [count, setCount] = useState(0);
+  return {
+    click() {
+      setCount(count() + 1);
+    },
+    render() {
+      console.log("value", count());
+    },
+  };
+}
+const use = useCounter();
+use.click();
+use.render();
+use.click();
+use.render();

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- event bubble inner outer body window sabse click hoga sabke pas event phuchega -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer {
+            background-color: yellow;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .inner {
+            background-color: red;
+            width: 100px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+
+<body style="background-color:lightblue">
+    <div id="outer" class="outer">
+        I am Outer
+        <div id="inner" class="inner">
+            I am Inner
+        </div>
+    </div>
+    <a href="google.com">click Me</a>
+    <script src="event.js" />
+</body>
+
+</html>
